@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Bem vindo</title>
+    <title>Tudo Certo!</title>
 
     <!-- FAV ICON -->
     <link rel="shortcut icon" href="../images/fav.ico" />
@@ -20,6 +20,8 @@
     <!-- HEAER AND VIDEO SECTION -->
     <section class="bg">
       <div class="container">
+        <h1 style="margin-top: 40px">Tudo certo! Responda o Quizz para acessar o conteúdo!</h1>
+
         <div
           class="spl-12-offers spl-1-offers container1"
           style="margin: 0 auto; text-align: center; color: #fff !important"
@@ -28,69 +30,35 @@
             <div class="black">
               <div id="primeira">
                 <div class="question">
-                  <h3>Smoothies deliciosos</h3>
+                  <h3>Pergunta 1 de 3</h3>
+                  <p>Você realmente quer descobrir esse segredo?</p>
+                </div>
+                <div class="answer">
+                  <button class="a-btn" onclick="second()">SIM</button>
+                  <button class="a-btn" onclick="second()">NÃO</button>
+                </div>
+              </div>
+              <div id="second" class="hide">
+                <div class="question">
+                  <h3>Pergunta 2 de 3</h3>
+                  <p>Você já tentou ter resultados anteriormente?</p>
+                </div>
+                <div class="answer">
+                  <button class="a-btn" onclick="third()">SIM</button>
+                  <button class="a-btn" onclick="third()">NÃO</button>
+                </div>
+              </div>
+              <div id="third" class="hide">
+                <div class="question">
+                  <h3>Pergunta 3 de 3</h3>
                   <p>
-                    Feito a partir de ingredientes naturais, o smoothie se tornou sinônimo de lanche saudável. Seu nome
-                    é uma variante de “smooth”, que quer dizer “liso” ou “suave”, em inglês. Por isso, quando você se
-                    depara com essa bebida tem a certeza de estar tomando algo muito cremoso e delicioso.
+                    O vídeo a seguir tem um limite para poucas pessoas verem ao mesmo tempo... Já reservamos seu acesso!
+                    Quer assistir? 😄
                   </p>
-                  <p>
-                    A bebida surgiu no mercado com o sucesso dos liquidificadores domésticos na década de 1940. Criada
-                    na Califórnia, nos Estados Unidos, ficou conhecida quando começou a ser vendida em bares e lojas de
-                    produtos naturais. Popularizou-se por todo o mundo em 1970 e, até hoje, agrada aos mais diversos
-                    paladares, principalmente durante as estações mais quentes.
-                  </p>
-                  <p>
-                    O smoothie costuma ser feito com frutas, verduras, folhas, sementes, água, vegetais e bastante gelo
-                    para que se alcance a textura aveludada desejada. Na época em que surgiu, existia uma forte busca
-                    por uma alimentação mais saudável e uma necessidade de se consumir produtos energéticos e com baixa
-                    caloria e gordura. Por isso o uso de componentes tão naturais.
-                  </p>
-                  <p>
-                    Com o calor intenso do verão de Porto Alegre, o smoothie ajuda (e muito) a hidratar e a refrescar o
-                    corpo. Por isso, neste post, nós, do Projeto, vamos trazer mais detalhes sobre essa delícia gelada
-                    que tem a cara do verão.
-                  </p>
-                  <p>A bebida</p>
-                  <p>
-                    A partir da mistura de vários ingredientes, a bebida ganha uma textura leve, sem qualquer ligação
-                    com o leite ou o chocolate. Isso porque o principal foco do smoothie são ingredientes como as
-                    frutas, as hortaliças e as verduras, o que eleva a quantidade de vitaminas e minerais da refeição.
-                    Além disso, os ingredientes, muitas vezes, são misturados com gelo ou então congelados, o que traz
-                    ainda mais cremosidade e refrescância à bebida.
-                  </p>
-
-                  <p>Mistura ideal</p>
-                  <p>
-                    Para fazer um excelente smoothie não há regra sobre a mistura ideal. Vale adicionar tudo o que você
-                    gosta, principalmente as frutas de sua preferência. Existe, no entanto, uma forte tendência de
-                    combinações, como, por exemplo, frutas mais cítricas com folhas, como a hortelã. Há também misturas
-                    de frutas vermelhas com iogurtes naturais. Enfim, cada arranjo varia de acordo com o gosto, sofrendo
-                    alterações tanto nos ingredientes principais quanto nos secundários, como açúcar, canela, gengibre,
-                    entre outros.
-                  </p>
-                  <p>Onde encontrar?</p>
-                  <p>
-                    Depois de ler todas essas dicas, você já deve estar com água na boca, não é mesmo? Não tem problema,
-                    porque você pode encontrar os smoothies mais saborosos, cremosos e saudáveis nas unidades do
-                    Projeto. Com ingredientes naturais deliciosamente refrescantes, você vai saborear o melhor do verão.
-                  </p>
-                  <p>
-                    O Bombado, que compõe o nosso cardápio, além de ser rico em proteína, é composto por frutas
-                    vermelhas, morango, banana, pasta de amendoim, pó de hibisco, suco de laranja e servido com granola
-                    e hortelã, é uma ótima opção para aqueles que buscam energia para o dia todo. Já o Detox Plus+ vem
-                    com um mix de abacaxi, couve, manga, banana e laranja, perfeito para quem deseja consumir mais
-                    potássio e vitaminas.
-                  </p>
-                  <p>
-                    Todos eles combinam não só com as estações mais quentes do ano, mas também com os lanches do nosso
-                    menu. A dica é pedir como acompanhamento para os smoothies o Sanduíche Vegano e também o Tostado
-                    Caprese. São opções leves e ricas em nutrientes.
-                  </p>
-                  <p>
-                    Gostou das nossas dicas? Nós, do Projeto, estamos sempre dispostos a trazer as melhores sugestões
-                    para você.
-                  </p>
+                </div>
+                <div class="answer">
+                  <button class="a-btn" onclick="redirect()">SIM</button>
+                  <button class="a-btn" onclick="redirect()">NÃO</button>
                 </div>
               </div>
             </div>
@@ -108,5 +76,49 @@
         </p>
       </div>
     </section>
+
+    <script>
+      function second() {
+        document.getElementById("primeira").classList.add("hide");
+        document.getElementById("second").classList.remove("hide");
+      }
+      function third() {
+        document.getElementById("second").classList.add("hide");
+        document.getElementById("third").classList.remove("hide");
+      }
+      function redirect() {
+        location.href = "../";
+      }
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "5185399808184041");
+      fbq("track", "AddToCart");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=5185399808184041&ev=AddToCart&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </body>
 </html>
